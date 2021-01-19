@@ -34,18 +34,6 @@
         z-index:10;
 
     }
-    #btnpad2 {text-align: center;
-        color: #000000;
-        font: italic 1.2em "Fira Sans", serif;
-        text-shadow: 4px 2px 4px #000000;
-        font-size: 23px;
-        position:fixed;
-        left:65%;
-        top:400px;
-        transform:translateX(-50%);
-        z-index:10;
-
-    }
     #lst {text-align: center;
 
         font: italic 1.2em "Fira Sans", serif;
@@ -123,11 +111,6 @@
     <p id=todo>
     </p>
     </div>
-    
-    
-    <div id ='btnpad2’>
-    <button class="btn btn-danger" id =‘back_bt'>Back To Resume</button>
-    </div>
     <div id="lst">
             <ul id="todo_list"></ul>
             <ul id="completed_list"></ul>
@@ -140,7 +123,7 @@
             let todo_input = document.querySelector('#todo_input');
             let list = document.querySelector('#todo_list');
             let completed_list = document.querySelector('#completed_list');
-            let back_bt = document.querySelector('#back_bt');
+           
 
             todo_input.onkeydown = function(evt) {
                 if (evt.keyCode === 13) {
