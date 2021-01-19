@@ -141,16 +141,6 @@
                text_div.innerHTML = text;
 
 
-               let button_complete = document.createElement('button');
-               button_complete.innerHTML = 'x';
-               button_complete.classList.add('list_button');
-               button_complete.onclick = function () {
-                   list.removeChild(this.parentElement);
-                   let li = document.createElement('li');
-                   li.innerText = text;
-                   completed_list.appendChild(li);
-               };
-
                let button_remove = document.createElement('button');
                button_remove.innerHTML = '✓';
                button_remove.classList.add('list_button');
@@ -159,7 +149,6 @@
                };
 
                li.appendChild(text_div);
-               li.appendChild(button_complete);
                li.appendChild(button_remove);
                list.appendChild(li);
            }
