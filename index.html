@@ -123,6 +123,8 @@
     <p id=todo>
     </p>
     </div>
+    
+    
     <div id ='btnpad2’>
     <button class="btn btn-danger" id =‘back_bt'>Back To Resume</button>
     </div>
@@ -130,11 +132,15 @@
             <ul id="todo_list"></ul>
             <ul id="completed_list"></ul>
     </div>
+    
+    
+    
     <script type="text/javascript">
             let add_bt = document.querySelector('#add_bt');
             let todo_input = document.querySelector('#todo_input');
             let list = document.querySelector('#todo_list');
             let completed_list = document.querySelector('#completed_list');
+            let back_bt = document.querySelector('#back_bt');
 
             todo_input.onkeydown = function(evt) {
                 if (evt.keyCode === 13) {
